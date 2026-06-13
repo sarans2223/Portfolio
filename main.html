@@ -29,7 +29,7 @@
     cursor: none;
   }
 
-  /* ─── CUSTOM CURSOR ─── */
+  /* CUSTOM CURSOR */
   #cursor {
     position: fixed; width:12px; height:12px;
     background: var(--accent); border-radius:50%;
@@ -46,14 +46,14 @@
     transition: transform 0.15s ease-out, width 0.3s, height 0.3s;
   }
 
-  /* ─── CANVAS BACKGROUND ─── */
+  /* CANVAS BACKGROUND */
   #bg-canvas {
     position: fixed; top:0; left:0;
     width:100%; height:100%;
     z-index:0; pointer-events:none;
   }
 
-  /* ─── NOISE OVERLAY ─── */
+  /* NOISE OVERLAY */
   body::before {
     content:'';
     position:fixed; inset:0; z-index:1;
@@ -61,7 +61,7 @@
     pointer-events:none; opacity:0.4;
   }
 
-  /* ─── NAV ─── */
+  /* NAV */
   nav {
     position:fixed; top:0; left:0; right:0; z-index:100;
     padding:1.5rem 3rem;
@@ -91,10 +91,10 @@
   .nav-links a:hover { color:var(--white); }
   .nav-links a:hover::after { width:100%; }
 
-  /* ─── SECTIONS WRAPPER ─── */
+  /* SECTIONS WRAPPER */
   main { position:relative; z-index:2; }
 
-  /* ─── HERO ─── */
+  /* HERO */
   #hero {
     min-height:100vh; display:flex; flex-direction:column;
     align-items:center; justify-content:center;
@@ -205,7 +205,7 @@
   }
   @keyframes scrollLine { 0%{transform:scaleY(0);transform-origin:top} 50%{transform:scaleY(1);transform-origin:top} 51%{transform:scaleY(1);transform-origin:bottom} 100%{transform:scaleY(0);transform-origin:bottom} }
 
-  /* ─── FLOATING CARDS in hero ─── */
+  /* FLOATING CARDS in hero */
   .hero-float {
     position:absolute; border-radius:16px;
     border:1px solid var(--glass-border);
@@ -223,7 +223,7 @@
 
   @keyframes fadeSlideUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
 
-  /* ─── SECTION COMMONS ─── */
+  /* SECTION COMMONS */
   section { padding:7rem 2rem; max-width:1200px; margin:0 auto; }
   .section-label {
     display:inline-block; font-size:0.75rem; letter-spacing:0.15em;
@@ -241,7 +241,7 @@
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
   }
 
-  /* ─── ABOUT ─── */
+  /* ABOUT */
   #about { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
   .about-text p { color:var(--muted); line-height:1.9; font-size:1.05rem; margin-bottom:1.5rem; }
   .about-highlight {
@@ -289,7 +289,7 @@
   .orbit-dot:nth-child(3) { left:0; top:50%; transform:translate(-50%,-50%); }
   .orbit-dot:nth-child(4) { right:0; top:50%; transform:translate(50%,-50%); }
 
-  /* ─── SKILLS ─── */
+  /* SKILLS */
   #skills { max-width:1200px; margin:0 auto; padding:7rem 2rem; }
   .skills-hero {
     display:grid; grid-template-columns:minmax(260px,1fr) 1.4fr;
@@ -377,7 +377,7 @@
   .tag.cyan:hover { background:rgba(6,182,212,0.2); border-color:var(--accent2); }
   .tag.amber { border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.08); }
 
-  /* ─── PROJECTS ─── */
+  /* PROJECTS */
   #projects { max-width:1200px; margin:0 auto; padding:7rem 2rem; }
   .projects-grid {
     display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:2rem;
@@ -415,7 +415,7 @@
   }
   .project-link:hover { gap:0.8rem; }
 
-  /* ─── ACHIEVEMENTS ─── */
+  /* ACHIEVEMENTS */
   #achievements { max-width:1200px; margin:0 auto; padding:7rem 2rem; }
   .achievements-list { display:flex; flex-direction:column; gap:1rem; }
   .achievement-item {
@@ -442,7 +442,7 @@
     color:var(--accent); opacity:0.7;
   }
 
-  /* ─── CERTIFICATIONS ─── */
+  /* CERTIFICATIONS */
   #certifications { max-width:1200px; margin:0 auto; padding:7rem 2rem; }
   .certs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
   .cert-card {
@@ -468,7 +468,7 @@
     background:rgba(6,182,212,0.1); border:1px solid rgba(6,182,212,0.3); color:var(--accent2);
   }
 
-  /* ─── EXPERIENCE / TIMELINE ─── */
+  /* EXPERIENCE / TIMELINE */
   #experience { max-width:1200px; margin:0 auto; padding:7rem 2rem; }
   .timeline { position:relative; padding-left:2rem; }
   .timeline::before {
@@ -489,7 +489,7 @@
   .timeline-sub { font-size:0.85rem; color:var(--accent); font-weight:600; margin-bottom:0.75rem; }
   .timeline-desc { color:var(--muted); font-size:0.9rem; line-height:1.7; }
 
-  /* ─── CONTACT ─── */
+  /* CONTACT */
   #contact {
     max-width:1200px; margin:0 auto; padding:7rem 2rem;
     text-align:center;
@@ -528,7 +528,7 @@
     color:var(--accent2); margin:1.5rem 0;
   }
 
-  /* ─── FOOTER ─── */
+  /* FOOTER */
   footer {
     text-align:center; padding:3rem;
     border-top:1px solid var(--glass-border);
@@ -542,7 +542,7 @@
     margin-bottom:0.5rem;
   }
 
-  /* ─── SCROLL REVEAL ─── */
+  /* SCROLL REVEAL */
   .reveal { opacity:0; transform:translateY(40px); transition:all 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
   .reveal.visible { opacity:1; transform:translateY(0); }
   .reveal-delay-1 { transition-delay:0.1s; }
@@ -550,13 +550,13 @@
   .reveal-delay-3 { transition-delay:0.3s; }
   .reveal-delay-4 { transition-delay:0.4s; }
 
-  /* ─── SECTION DIVIDER ─── */
+  /* SECTION DIVIDER */
   .divider {
     max-width:1200px; margin:0 auto;
     border:none; border-top:1px solid var(--glass-border);
   }
 
-  /* ─── MEDIA UPLOAD AREA ─── */
+  /* MEDIA UPLOAD AREA */
   .media-section { max-width:1200px; margin:0 auto; padding:7rem 2rem; }
   .media-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; }
   .media-slot {
@@ -581,7 +581,7 @@
     color:var(--accent); font-family:'JetBrains Mono',monospace;
   }
 
-  /* ─── RESPONSIVE ─── */
+  /* RESPONSIVE */
   @media(max-width:768px){
     nav { padding:1rem 1.5rem; }
     .nav-links { display:none; }
@@ -590,7 +590,7 @@
     .contact-card { padding:2rem; }
   }
 
-  /* ─── GLITCH TEXT effect ─── */
+  /* GLITCH TEXT effect */
   .glitch {
     position:relative;
   }
@@ -631,7 +631,6 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#achievements">Wins</a></li>
     <li><a href="#certifications">Certs</a></li>
-    <li><a href="#media">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -648,6 +647,7 @@
   <p class="hero-sub">Aspiring IT professional • Public Speaker • Building the Future with Technology</p>
   <div class="hero-ctas">
     <a href="#projects" class="btn-primary">View My Work →</a>
+    <a href="assets/resume.pdf" class="btn-outline" download>Download Resume</a>
     <a href="#contact" class="btn-outline">Get In Touch</a>
   </div>
   <div class="hero-scroll">
@@ -664,7 +664,7 @@
     <div class="about-text">
       <p class="reveal reveal-delay-1">I'm <strong class="about-highlight">Saran S</strong> — a passionate tech enthusiast with a creative mindset and a strong drive to build something meaningful. I believe technology is more than just code; it's a way to create ideas, solve problems, and shape the future.</p>
       <p class="reveal reveal-delay-2">With curiosity as my fuel and consistency as my strength, I'm always focused on learning, improving, and pushing beyond limits. I enjoy turning ideas into reality through projects, innovation, and smart execution.</p>
-        <p class="reveal reveal-delay-3">From exploring new technologies to working with teams and leading with confidence, I value growth in every form. My public speaking and communication skills help me express ideas clearly, connect with people, and lead effectively in different environments. My journey is about building skills, creating impact, and bringing value and vision wherever I go. This is only the beginning, and I'm ready for everything that comes next.</p>
+      <p class="reveal reveal-delay-3">From exploring new technologies to working with teams and leading with confidence, I value growth in every form. My public speaking and communication skills help me express ideas clearly, connect with people, and lead effectively in different environments. My journey is about building skills, creating impact, and bringing value and vision wherever I go. This is only the beginning, and I'm ready for everything that comes next.</p>
     </div>
     <div class="about-stats">
       <div class="stat-card reveal reveal-delay-1"><div class="stat-num">90.8%</div><div class="stat-label">Grade 12 Score</div></div>
@@ -678,7 +678,7 @@
       <span class="orbit-dot"></span>
       <span class="orbit-dot"></span>
       <span class="orbit-dot"></span>
-      <span class="orbit-dot"></span>
+      <span class="orbit-dot"></span>  
       <div class="avatar-inner">SS</div>
     </div>
   </div>
@@ -835,6 +835,14 @@
   <h2 class="section-title reveal">Victory <span>lap</span></h2>
   <div class="achievements-list">
     <div class="achievement-item reveal reveal-delay-1">
+      <div class="achievement-icon">🏅</div>
+      <div class="achievement-text">
+        <h3>Winner — 3rd Place</h3>
+        <p>STEAMIFIED Hackathon May 2026.</p>
+      </div>
+      <span class="achievement-year">2026</span>
+    </div>
+    <div class="achievement-item reveal reveal-delay-1">
       <div class="achievement-icon">⭐</div>
       <div class="achievement-text">
         <h3>Best Student of the Year</h3>
@@ -980,16 +988,7 @@
 <hr class="divider">
 
 <!-- MEDIA GALLERY -->
-<section id="media" class="media-section">
-  <span class="section-label reveal">gallery</span>
-  <h2 class="section-title reveal">Certificates &amp; <span>Memories</span></h2>
-  <p style="color:var(--muted);margin-bottom:2rem;font-size:0.9rem;" class="reveal">Click any slot to upload your certificates, event photos, or project screenshots.</p>
-  <div class="media-grid" id="mediaGrid">
-    <!-- dynamically rendered -->
-  </div>
-</section>
-
-<hr class="divider">
+<!-- MEDIA GALLERY removed -->
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1016,7 +1015,7 @@
 </footer>
 
 <script>
-// ─── CURSOR
+// CURSOR
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
 let mx=0,my=0,rx=0,ry=0;
@@ -1028,7 +1027,7 @@ document.querySelectorAll('a,button,.skill-card,.project-card,.achievement-item,
   el.addEventListener('mouseleave',()=>{cursor.style.width='12px';cursor.style.height='12px';ring.style.width='40px';ring.style.height='40px';});
 });
 
-// ─── 3D PARTICLE CANVAS
+// 3D PARTICLE CANVAS
 const canvas=document.getElementById('bg-canvas');
 const ctx=canvas.getContext('2d');
 let W,H,particles=[];
@@ -1079,80 +1078,35 @@ function animCanvas(){
 }
 animCanvas();
 
-// ─── SCROLL REVEAL
+// SCROLL REVEAL
 const reveals=document.querySelectorAll('.reveal');
 const observer=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});
 },{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
 reveals.forEach(r=>observer.observe(r));
 
-// ─── MEDIA GALLERY
-const mediaGrid=document.getElementById('mediaGrid');
-const slots=[
-  {label:'Certificate 1',type:'cert'},
-  {label:'Certificate 2',type:'cert'},
-  {label:'Certificate 3',type:'cert'},
-  {label:'Hackathon Photo',type:'photo'},
-  {label:'Event Photo',type:'photo'},
-  {label:'Project Screenshot',type:'project'},
-  {label:'Award Photo',type:'award'},
-  {label:'Team Photo',type:'photo'},
-];
+// MEDIA GALLERY JavaScript removed
 
-slots.forEach((slot,i)=>{
-  const div=document.createElement('div');
-  div.className='media-slot';
-  div.innerHTML=`
-    <label>
-      <input type="file" accept="image/*,video/*" data-idx="${i}">
-      <div class="media-icon">${slot.type==='cert'?'📜':slot.type==='photo'?'📸':slot.type==='project'?'💻':'🏆'}</div>
-      <div class="media-type-label">${slot.type}</div>
-      <div class="media-text">${slot.label}<br><span style="color:rgba(248,248,255,0.3);font-size:0.7rem;">Click to upload</span></div>
-    </label>
-  `;
-  div.querySelector('input').addEventListener('change',function(){
-    const file=this.files[0];
-    if(!file)return;
-    const url=URL.createObjectURL(file);
-    div.innerHTML='';
-    if(file.type.startsWith('video')){
-      const v=document.createElement('video');
-      v.src=url; v.autoplay=true; v.loop=true; v.muted=true; v.playsInline=true;
-      div.appendChild(v);
-    } else {
-      const img=document.createElement('img');
-      img.src=url; img.alt=slot.label;
-      div.appendChild(img);
-    }
-    div.style.border='2px solid var(--accent)';
-    div.style.boxShadow='0 0 20px rgba(124,58,237,0.3)';
-  });
-  mediaGrid.appendChild(div);
-});
-
-// ─── TAB-STYLE NAV (SHOW ONE SECTION)
+// NAV HIGHLIGHT ON SCROLL
 const sections=document.querySelectorAll('section[id]');
 const navLinks=document.querySelectorAll('.nav-links a');
-const dividers=document.querySelectorAll('hr.divider');
 
-function showOnlySection(targetId){
-  sections.forEach(section=>{
-    section.style.display=section.id===targetId?'block':'none';
-  });
-  dividers.forEach(divider=>{divider.style.display='none';});
+function setActiveLink(targetId){
   navLinks.forEach(link=>{
-    link.style.color=link.getAttribute('href')==='#'+targetId?'var(--white)':'';
+    const isActive = link.getAttribute('href') === '#' + targetId;
+    link.style.color = isActive ? 'var(--white)' : '';
   });
-  window.scrollTo(0,0);
 }
 
-navLinks.forEach(link=>{
-  link.addEventListener('click',e=>{
-    e.preventDefault();
-    const targetId=link.getAttribute('href').slice(1);
-    showOnlySection(targetId);
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      setActiveLink(entry.target.id);
+    }
   });
-});
+}, { threshold: 0.6 });
+
+sections.forEach(section => sectionObserver.observe(section));
 </script>
 </body>
 </html>
